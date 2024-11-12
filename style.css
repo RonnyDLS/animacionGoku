@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: none;
+}
+img{
+    height: 300px;
+}
+.bala{
+    height: 20px;
+    width: 50px;
+    background-color: yellow;
+    display: inline-block;
+    margin-top: 35px;
+    border-radius: 5px 20px 20px 5px;
+    animation: bala;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bala {
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: 600px;
+        margin-top: 300px;
+    }
+}
+
+.rink{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.goku{
+    justify-self: end;
+    align-self: center;
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 200px;
+    animation: goku;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.led{
+    padding: 5px;
+    background-color: rgb(26, 255, 0);
+    margin: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: led;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    
+}
+
+.boom{
+    width: 200px;
+    height: 200px;
+    justify-self: end;
+    margin-right: 100px;
+    align-self: center;
+    border-radius: 50%;
+    animation: boom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes boom {
+    0%{
+        display: none;
+    }
+    5%{
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 100px 20px rgb(0, 0, 0);
+    }
+    100%{
+        background-color: rgb(0, 187, 255);
+        box-shadow: 0px 0px 100px 20px rgb(0, 155, 245);
+        justify-self: start;
+    }
+}
+
+@keyframes led {
+    0%{
+        background-color:  rgb(26, 255, 0);
+        box-shadow: 0px 0px 20px 5px rgb(26, 255, 0);
+    }
+    100%{
+        background-color:  rgb(0, 0, 0);
+    }
+}
+
+@keyframes goku {
+    0%{
+        
+    }
+    10%{
+        background-image: url(goku/goku1.png);
+    }
+    /* 12%{
+        margin-right: 10px;
+    }
+    14%{
+        margin-right: 15px;
+    }
+    18%{
+        margin-right: 20px;
+    }
+    20%{
+        margin-right: 25px;
+    }
+    22%{
+        margin-right: 30px;
+    } */
+    23%{
+        
+        background-image: url(goku/image.png);
+        
+    }
+    24%{
+        margin-right: 100px;
+    }
+    100%{
+        justify-self: start;
+        background-image: url(goku/goku2.png);
+    }
+
+}
