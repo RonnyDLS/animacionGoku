@@ -20,3 +20,5 @@ jobs: # trabajos que se haran
     steps: # pasos
       - name: 'Hola mundo'
         run: echo "Hello World"
+      - name: Dame la fecha
+        run: date
